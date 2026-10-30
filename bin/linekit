@@ -1,0 +1,17 @@
+#!/bin/sh
+# linekit: small line-oriented text tools. See README.md.
+#
+# Run it as `sh bin/linekit ...`: the tests never rely on the #! line.
+set -u
+case $0 in
+*/*) LK_ROOT=${0%/*}/.. ;;
+*) LK_ROOT=.. ;;
+esac
+
+. "$LK_ROOT/lib/common.sh"
+for _lk_cmd_file in "$LK_ROOT"/lib/cmd_*.sh; do
+	[ -f "$_lk_cmd_file" ] && . "$_lk_cmd_file"
+done
+unset _lk_cmd_file
+
+lk_main "$@"
