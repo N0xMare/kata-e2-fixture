@@ -15,7 +15,7 @@ sh bin/linekit --list | --version | --help
 | command   | what it does                                                       |
 |-----------|--------------------------------------------------------------------|
 | `count`   | print the number of input lines                                    |
-| `number`  | prefix each line with its number and a separator (`-s SEP`, default a tab) |
+| `number`  | prefix each line with its number and a separator (`-s SEP`, default a tab; `-n START`, default 1) |
 | `squeeze` | replace each run of blank lines with one empty line                |
 | `trim`    | remove leading and trailing blanks (spaces and tabs) from each line |
 
