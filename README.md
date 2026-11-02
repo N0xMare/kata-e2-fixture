@@ -18,6 +18,7 @@ sh bin/linekit --list | --version | --help
 | `number`  | prefix each line with its number and a separator (`-s SEP`, default a tab) |
 | `squeeze` | replace each run of blank lines with one empty line                |
 | `trim`    | remove leading and trailing blanks (spaces and tabs) from each line |
+| `wrap`    | fill paragraphs to a maximum line width (`-w WIDTH`, default 72)    |
 
 ## Conventions
 
